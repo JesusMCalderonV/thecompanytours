@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename="css/style.css")}}" type="text/css" media="all">
+    </head>
+    <body>
+        <div class="encabezado" id="menu">
+            <ul class="principal">
+                <li><a href="/">INICIO</a></li>
+                <li class="tours"><a href="/tours">TOURS
+                    <ul class="deplegable">
+                        <li><a href="/parque_tayrona">PARQUE TAYRONA</a></li>
+                        <li><a href="/ciudad_perdida">CIUDAD PERDIDA</a></li>
+                        <li><a href="/palomino">PALOMINO</a></li>
+                        <li><a href="/santa_marta">SANTA MARTA</a></li>
+                        <li><a href="/minca">MINCA</a></li>
+                        <li><a href="/tours">OTROS DESTINOS</a></li>
+                    </ul></a></li>
+                <li><a href="/contacto">CONTACTO</a></li>
+                <li><a href="/galeria">GALERÍA</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="whatsapp">
+            <a href=""><img class="boton" src="{{url_for('static', filename="img/wp.png")}}" alt="logo wsp"></a>
+        </div>
+        {% block body %}{% endblock %}
+    </body>
+</html>

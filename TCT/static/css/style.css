@@ -1,0 +1,76 @@
+*{
+    font-family: sans-serif;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: center;
+}
+
+.encabezado a{
+    color: rgb(53, 34, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.encabezado ul{
+    list-style: none;
+}
+
+.principal li{
+    display: inline-block;
+    position: relative;
+}
+
+.encabezado ul ul{
+    display: none;
+}
+
+.encabezado .tours:hover > ul{
+    display: block;
+    position: absolute;
+    padding: 10px;
+    background: #fff;
+}
+
+.encabezado ul ul li{
+    float: none;
+    width: max-content;
+}
+
+.encabezado li :hover{
+    font-weight: bolder;
+}
+
+.whatsapp img{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 999;
+    background: rgb(0, 202, 91);
+    border-radius: 50px;
+    bottom: 30px;
+    padding: 10px;
+    transition: ease 0.5s;
+    animation: parpadear 1.2s infinite;
+}
+
+.whatsapp img:hover{
+    background: rgb(45, 221, 124);
+    transform: scale(1,1);
+    transition: 0.3;
+}
+
+hr{
+    color: rgb(228, 228, 228);
+    width: 80%;
+}
+
+@keyframes parpadear {
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.815);
+    }
+    100%{
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
